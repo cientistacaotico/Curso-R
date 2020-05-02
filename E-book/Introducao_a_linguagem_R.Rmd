@@ -1,0 +1,80 @@
+---
+title:  |
+  Introdução à linguagem R
+author:  |
+  Pablo Silva
+date:  |
+  Universidade Federal de Goiás
+output: 
+  pdf_document:
+    latex_engine: pdflatex
+fontsize: 12pt
+linestretch: 1.5
+geometry: left = 2cm, right = 2cm, top = 2cm, bottom = 2cm
+fontfamily: mathpazo
+linkcolor: black
+header-includes:
+- \usepackage{fancyhdr}
+- \usepackage{lastpage}
+---
+
+<!--- Define Headers and Footers --->
+  \renewcommand{\headrulewidth}{0pt}
+  \fancyfoot[L]{\footnotesize \thepage\}
+  \setlength\footskip{0pt}
+}
+\pagestyle{plain}
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+```{r, echo=FALSE}
+#install.packages("ggplot2")
+library(ggplot2)
+a <- as.data.frame(rnorm(10000))
+b <- as.data.frame(rnorm(1000))
+c <- cbind(a,b)
+
+ggplot(data = a) +
+  geom_histogram(bins = 30, aes(x = rnorm(10000)), alpha = .7, fill = "lightblue", binwidth = .05) +
+  ylab("Frequência") +
+  xlab("Valores") +
+  theme_bw() +
+  theme(panel.grid = element_blank(),
+        axis.text = element_text(size = 12), 
+        text = element_text(size = 14))
+
+
+```
+
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+https://github.com/cientistacaotico/Introduction-to-R-programming
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

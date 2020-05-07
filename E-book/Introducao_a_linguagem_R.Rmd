@@ -56,13 +56,45 @@ ggplot(data = a) +
 
 
 ```
+\newpage
+
+# Sumário
+
+descrever aqui
+
+\newpage
+
+
+# O que é programação?
+
+Programação é um processo de escrita, testes e manutenção de programas de computadores. Basicamente é um sistema que automatiza as tarefas por meio de uma linguagem intemediária que transmite comandos desenvolvidos pelo programador e, com isso, são passíveis de serem executadas pela máquina. 
+
+A primeira pessoa a programar foi uma mulher conhecida como **Ada Lovelace**, que escreveu um código que possibilitou a utilização da máquina analítica de Charles Babbage, uma máquina robusta, de difícil comunicação, considerada a precursora dos computadores eletrônicos atuais.
+
+A linguagem de programação é um método padronizado que permite comunicar instruções específicas para um computador. Existem várias linguagens, mas aqui adotaremos a linguagem R.
+
+A programação envolve um conjunto de habilidades cognitivas, como o raciocínio lógico, habilidades matemáticas, capacidade de abstração e de lidar com diferentes tipos de dados. No entanto, quando aprendemos a programar, a primeira coisa que fazemos é criar um algoritmo, que funciona como uma receita. Nessa etapa descrevemos cada processo por meio de um pensamento lógico, do qual podemos utilizar diferentes abordagens para conseguir executar uma tarefa. Tudo aqui é feito baseado em tentativa e erro. Portanto, se você não conseguir executar o seu programa de primeira lembre-se que isso é normal e com o tempo você irá aperfeiçoar essas habilidades que funcionarão de forma quase que automática.
+
+É importante ressaltar que esse aprendizado requer uma dedicação de tempo, explorando os recursos disponíveis e praticando diariamente. Vamos juntos descobrir os desafios que essa linguagem de programação pode nos proporcionar. 
+
+Essa apostila ficará disponibilizada na minha conta pessoal do github e você poderá acessar quando quiser: https://github.com/cientistacaotico/Introduction-to-R-programming
+
+# O software R
+
+# Instalação R e Rstudio
+
+# Uso como calculadora
+
+# Usando funções existentes
+
+
 
 
 ## R Markdown
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:    
 https://github.com/cientistacaotico/Introduction-to-R-programming
 
 ```{r cars}

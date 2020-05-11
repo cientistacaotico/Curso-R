@@ -167,4 +167,77 @@ library()
 # Teste o seu trabalho usando a funcao cor() -- use o help
 
 dado.cor <- read.table(file = "./Dados_desafio/covid19_01-05-2020.txt", header = T)
+cor(x = dado.cor$estimated_population_2019, y = dado.cor$death_rate)
+
+# Lógica Felipe
+# pegar cada valor de x e subtrair pela média
+# mesmo y
+# dividir pela raiz quadrada
+
+# Lógica Pablo
+
+# CIMA
+# subtrair cada valor de x pela média de x
+# subtrair cada valor de y pela média de y
+# multiplica o resultado das duas subtrações
+# somatorio do resultado da multiplicação = result parte cima
+
+# BAIXO
+# 1 - subtrair cada valor de x pela média de x ^2
+# 2 - subtrair cada valor de y pela média de y ^2
+# somatorio de 1
+# somatorio de 2
+# multiplica os somatorios 1 e 2
+# tira a raiz da multiplicação = result parte de baixo
+
+# parte de cima/parte de baixo = função de correlação
+
+x <- dado.cor$estimated_population_2019
+y <- dado.cor$death_rate
+
+func.cor <- function(x,y){
+  #cima
+  mediax <- mean(x)
+  mediay <- mean(y)
+  subx <- x-mediax
+  suby <- y-mediay
+  multi1 <- subx*suby
+  soma.cima <- sum(multi1)
+  #baixo
+  elevax <- subx^2
+  elevay <- suby^2
+  somax <- sum(elevax)
+  somay <- sum(elevay)
+  mult.somas <- somax*somay
+  raiz <- sqrt(mult.somas)
+  r <- soma.cima/raiz
+  return(r)
+}
+
+func.cor(x = x, y = y)
+
+func.cor2 <- function(x,y){
+  cima <- sum((x-mean(x))*(y-mean(y)))
+  baixo <- sqrt(sum((x-mean(x))^2)*sum((y-mean(y))^2))
+  r <- cima/baixo
+  return(r)
+}
+
+func.cor2(x,y)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

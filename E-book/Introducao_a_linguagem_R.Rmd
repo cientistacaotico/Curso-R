@@ -58,13 +58,6 @@ ggplot(data = a) +
 ```
 \newpage
 
-# Sumário
-
-descrever aqui
-
-\newpage
-
-
 # O que é programação?
 
 Programação é um processo de escrita, testes e manutenção de programas de computadores. Basicamente é um sistema que automatiza as tarefas por meio de uma linguagem intemediária que transmite comandos desenvolvidos pelo programador e, com isso, são passíveis de serem executadas pela máquina. 
@@ -81,32 +74,31 @@ Essa apostila ficará disponibilizada na minha conta pessoal do github e você p
 
 # O software R
 
+O R é uma linguagem bastante utilizada para análise de dados e como qualquer outra linguagem de programação você precisa saber o que está fazendo para que o comando faça sentido. A sua área de trabalho dentro do R possui uma interface interativa, no qual você escreve comandos e obtem o resultado. É uma linguagem funcional orientada a objetos. Isso significa que as análises e ações que você fizer no ambiente R são executadas por funções e essencialmente relacionadas a objetos. 
+
+O ambiente R é um sistema modular composto por pacotes que executam as tarefas. O pacote básico possui as funcionalidades necessárias para realizar os comandos matemáticos e estatísticos mais usuais. Além disso, o R é uma linguagem de programação em código aberto. Isso significa que qualquer um pode contribuir para essa comunidade, o que permite que novos pacotes possam surgir de acordo com a necessidade dos usuários. 
+
+Existem algumas comunidades onde podemos consultar sobre dúvidas e problemas que encontramos ao longo do caminho: 
+
+1. Blogs
+  + R-bloggers: https://www.r-bloggers.com/
+  + Revolution Analytics Blog: https://blog.revolutionanalytics.com/
+  + R-statistics: https://www.r-statistics.com/
+  + R Data Mining Blog: 
+  + Simply Statistics: https://simplystatistics.org/ Embora não esteja diretamente vinculado ao R, este é um blog muito bem escrito sobre a aplicação prática das estatísticas. Big data e análises estatísticas são temas comuns encontradas nesse blog. Este é um blog que deve estar na sua lista de leitura.
+2. Fóruns
+  + Nabble: https://r.789695.n4.nabble.com/
+  + Stack Overflow: https://stackoverflow.com/questions/tagged/r
+  + Cross Validated: https://stats.stackexchange.com/questions/tagged/r
+  + R-Help Mailing List: https://stat.ethz.ch/mailman/listinfo/r-help
+3. Sites
+  + Crantastic: https://crantastic.org/
+  + Search the R Statistical Language: http://www.dangoldstein.com/search_r.html
+  + R-dir: https://r-dir.com/
+
 # Instalação R e Rstudio
 
 # Uso como calculadora
 
 # Usando funções existentes
 
-
-
-
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:    
-https://github.com/cientistacaotico/Introduction-to-R-programming
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

@@ -98,7 +98,145 @@ Existem algumas comunidades onde podemos consultar sobre dúvidas e problemas qu
 
 # Instalação R e Rstudio
 
+É possível executar os seus comandos diretamente no software R ou utilizando uma interface gráfica (GUI, *Graphical User Interface*). Para instalar o software em seu computador basta acessar o link (https://cran.r-project.org/) e fazer o download de acordo com o seu sistema operacional. Para instalar, basta seguir as recomendações de instalação padrão. A interface gráfica que iremos utilizar aqui é o RStudio, que está disponível gratuitamente para Linux, Windows e Mac (http://www.rstudio.com/). O RStudio possui uma interface mais amigável em comparação com a interface básica do R e, por isso, pode ser interessante para quem está começando a programar agora. Lembre-se de instalar primeiramente o R e em seguida o RStudio.
+
 # Uso como calculadora
 
-# Usando funções existentes
+Uma das funcionalidades do software é o uso como calculadora. Aqui podemos escrever expressões matemáticas que são executadas facilmente. Vejamos alguns exemplos a seguir:
+
+```{r}
+2+2 # Adição
+```
+
+```{r}
+5-3 # Subtração
+```
+
+```{r}
+4*5 # Multiplicação
+```
+
+```{r}
+20/4 # Divisão 
+```
+
+```{r}
+2^2 # Potência
+```
+
+#### Como você pode perceber, a linguagem R permite que a gente crie comentários utilizando **#** para ajudar a entender o que foi realizado. Em muitos casos, criamos o nosso código e em algum momento precisamos retornar para corrigir algumas partes. Portanto, é indicado fazer anotações ao longo do seu script para evitar problemas caso eles aconteçam.
+
+&nbsp;
+
+```{r}
+# As hashtags ajudam!!!
+```
+
+
+Note que ao executar uma linha de comando do script aparecerá o comando executado seguido do sinal de > e logo abaixo o resultado seguido de [1]. Por exemplo:
+
+### No script
+
+2+2
+
+### No console
+
+###### > 2+2
+###### [1] 4
+
+Observação: o número que vem dentro do [ ] representa a posição do seu resultado. Como no exemplo acima executamos uma expressão matemática que retorna apenas uma resposta, então, temos [1]. Essa posição é mais importante quando temos um comando que retorna mais de um resultado ou quando estamos trabalhando com matrizes. Vejamos o seguinte exemplo:
+
+```{r}
+2:8
+```
+
+O comando acima cria uma sequência de números que variam de 2 a 8, e cada um deles representa uma posição do vetor. Nesse resultado temos sete itens, mas como todos couberam em apenas uma linha do console, então, o programa retorna a posição apenas do primeiro item. Caso contrário, se o comprimento do vetor extrapossasse a primeira linha do console, logo, apresentaria a posição do primeiro elemento da próxima linha. Por exemplo:
+
+```{r}
+1:30
+```
+
+No próximo tópico veremos outras funcionalidades para as posições do vetor.
+
+# Atribuição (assign)
+
+No tópico anterior, vimos que o resultado de um comando apareceu diretamente na tela, mas também podemos atribuir (gravar) esse resultado a um objeto. Para isso, utilizamos o símbolo de menor e hífen (com ou sem espaço antes do símbolo de menor e depois do hífen). Podemos também utilizar o atalho **Alt** + **-**
+
+###### <-
+
+O sinal **=** também funciona, mas para essa apostila adotaremos **<-** como o comando para atribuir uma informação a um objeto. Teste as duas opções e use a que mais te agradar. 
+
+Exemplo:
+
+```{r}
+a <- 1:5
+```
+
+Com isso, atribuimos ao objeto **a** uma sequência que varia de 1 a 5 e, portanto, podemos retornar a esse objeto sempre que precisarmos. Basta escrever o nome do objeto.
+
+```{r}
+a
+```
+
+Podemos utilizar os objetos criados para executar operações matemáticas. Por exemplo:
+
+```{r}
+a^2
+```
+
+Nesse caso, elevamos todos os objetos do vetor à potência 2. Além disso, podemos gravar esse resultado em um novo objeto. Vamos nomear esse novo objeto como **b**.
+
+```{r}
+b <- a^2
+```
+
+Agora nós temos dois vetores, **a** e **b**, e podemos brincar um pouco com as informações que estão contidos em cada um.
+
+Temos que **b** é um vetor de comprimento igual a 5, e podemos alterar quaisquer itens utilizando a notação de posição do vetor [ ]. Por exemplo:
+
+Valores originais:
+
+```{r}
+b
+```
+
+Substituindo o item que está na posição [3] pelo número 5:
+
+```{r}
+b[3] <- 5
+```
+
+Esse é o nosso novo vetor **b**:
+
+```{r}
+b
+```
+
+Também podemos explorar outras possibilidades. Por exemplo: eu preciso que o item [5] do objeto **a** seja igual o item [1] do objeto **b**.
+
+```{r}
+a
+b
+a[5] <- b[1]
+a
+```
+
+Além de alterar itens dentro do vetor, também podemos realizar operações matemáticas entre objetos. Por exemplo:
+
+```{r}
+b-a 
+```
+
+Nesse caso, a subtração vai respeitar as posições dos vetores e, portanto, os vetores precisam ter o mesmo comprimento. Caso contrário, receberemos uma mensagem de alerta, e precisamos ter cuidado para que pequenos problemas não afetem o resultado do código. Faça o teste.
+
+#### Agora você pode criar novas alterações utilizando outros objetos. Esse é o momento de você se divertir.
+
+# Utilizando funções existentes
+
+Como já sabemos, o software R é um programa de código aberto (*Open Source*) e conta com o esforço colaborativo da comunidade de usuários, que podem criar e disponibilizar novas bibliotecas. Em cada biblioteca contém funções que executam uma determinada atividade e, por isso, esse tópico será dedicado para o uso dessas funções.
+
+
+
+
+
 

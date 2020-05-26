@@ -124,7 +124,7 @@ Uma das funcionalidades do software é o uso como calculadora. Aqui podemos escr
 2^2 # Potência
 ```
 
-#### Como você pode perceber, a linguagem R permite que a gente crie comentários utilizando **#** para ajudar a entender o que foi realizado. Em muitos casos, criamos o nosso código e em algum momento precisamos retornar para corrigir algumas partes. Portanto, é indicado fazer anotações ao longo do seu script para evitar problemas caso eles aconteçam.
+#### Como você pode perceber, a linguagem R permite que a gente crie comentários utilizando **#** para ajudar a entender o que foi realizado. Em muitos casos, criamos o nosso código e em algum momento precisamos retornar para corrigir algumas partes. Portanto, é indicado fazer anotações que ajude a identificar potenciais problemas nas suas linhas de comando.
 
 &nbsp;
 
@@ -150,7 +150,7 @@ Observação: o número que vem dentro do [ ] representa a posição do seu resu
 2:8
 ```
 
-O comando acima cria uma sequência de números que variam de 2 a 8, e cada um deles representa uma posição do vetor. Nesse resultado temos sete itens, mas como todos couberam em apenas uma linha do console, então, o programa retorna a posição apenas do primeiro item. Caso contrário, se o comprimento do vetor extrapossasse a primeira linha do console, logo, apresentaria a posição do primeiro elemento da próxima linha. Por exemplo:
+O comando acima cria uma sequência de números que variam de 2 a 8, e cada um deles representa uma posição no vetor. Nesse resultado temos sete itens, mas como todos couberam em apenas uma linha do console, então, o programa retorna a posição apenas do primeiro item. Caso contrário, se o comprimento do vetor extrapossasse a primeira linha do console, logo, apresentaria a posição do primeiro elemento da próxima linha. Por exemplo:
 
 ```{r}
 1:30
@@ -231,12 +231,26 @@ Nesse caso, a subtração vai respeitar as posições dos vetores e, portanto, o
 
 #### Agora você pode criar novas alterações utilizando outros objetos. Esse é o momento de você se divertir.
 
+# Tipos de objetos
+
+Nos tópicos anteriores, vimos a palavra **vetor** sendo mencionada algumas vezes. Nessa sessão, iremos definir o que é um vetor e apresentar outros objetos frequentes na linguagem R. Esses objetos serão explorados no decorrer dos exemplos, mas para fins didáticos iremos conhecê-los agora.
+
+1. **Vetores**: sequência composta por elementos numéricos ou caracteres (letras, palavras).
+
+2. **Matrizes**: coleção de vetores organizados em linhas ou colunas (para esse tipo de objeto é fundamental que os elementos que compõem a matriz sejam da mesma classe, numérico ou categórico).
+
+3. **Dataframe**: a estrutura desse objeto é semelhante a uma matriz, mas permite vetores com classes diferentes.
+
+4. **Listas**: coleção ordenada de objetos. Em uma lista não há necessidade dos componentes serem da mesma classe ou comprimento. Por exemplo, podemos preencher uma lista com um vetor numérico, uma matriz, e até mesmo outra lista.
+
+5. **Funções**: as funções criadas também são objetos no ambiente R. Veremos exemplos nas próximas sessões.
+
+
 # Utilizando funções existentes
 
 Como já sabemos, o software R é um programa de código aberto (*Open Source*) e conta com o esforço colaborativo da comunidade de usuários, que podem criar e disponibilizar novas bibliotecas. Em cada biblioteca contém funções que executam uma determinada atividade e, por isso, esse tópico será dedicado para o uso dessas funções.
 
-
-
+# Ajuda
 
 
 
